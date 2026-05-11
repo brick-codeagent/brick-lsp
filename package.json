@@ -1,0 +1,17 @@
+{
+  "name": "@brick/extension-lsp",
+  "version": "0.1.0",
+  "description": "Brick extension: Language Server Protocol integration — hover, go-to-definition, completions, diagnostics, symbols, references",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --check index.js"
+  },
+  "dependencies": {
+    "vscode-jsonrpc": "^8.2.0",
+    "vscode-languageserver-protocol": "^3.17.5",
+    "vscode-languageserver-textdocument": "^1.0.12"
+  }
+}
