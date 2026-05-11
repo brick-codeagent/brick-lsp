@@ -1,0 +1,30 @@
+{
+  "name": "lsp",
+  "version": "0.1.0",
+  "description": "Language Server Protocol integration — hover, go-to-definition, completions, diagnostics, symbols, references",
+  "type": "mcp",
+  "mcp": {
+    "command": "node",
+    "args": ["index.js"]
+  },
+  "capabilities": {
+    "tools": [
+      "lsp_hover",
+      "lsp_go_to_definition",
+      "lsp_completion",
+      "lsp_diagnostics",
+      "lsp_document_symbols",
+      "lsp_find_references"
+    ],
+    "commands": [],
+    "hooks": []
+  },
+  "config": {
+    "servers": {
+      "type": "string",
+      "description": "JSON map of file extension patterns (e.g. '.ts') to LSP server commands (e.g. 'typescript-language-server --stdio'). Merged on top of built-in defaults.",
+      "default": "{}",
+      "label": "Server Overrides"
+    }
+  }
+}
